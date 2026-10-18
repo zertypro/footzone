@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FootZone - Le football en direct</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+    }
+    header {
+      background: #101c30;
+      padding: 20px;
+      border-bottom: 3px solid #20d879;
+    }
+    header h1 { margin: 0; color: #20d879; }
+    header p { margin-bottom: 0; color: #cbd5e1; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 15px 20px;
+      background: #17243a;
+    }
+    nav a { color: white; text-decoration: none; }
+    main { max-width: 1000px; margin: auto; padding: 20px; }
+    .hero {
+      background: linear-gradient(135deg, #075e36, #123b2c);
+      padding: 30px 20px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+    }
+    .hero h2 { font-size: 30px; }
+    .section-title { color: #20d879; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #17243a;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #293950;
+    }
+    .card h3 { margin-top: 0; }
+    .tag { color: #20d879; font-weight: bold; }
+    .premium {
+      margin-top: 30px;
+      padding: 25px;
+      border: 2px solid #e9bd55;
+      border-radius: 15px;
+      background: #242638;
+    }
+    button {
+      background: #20d879;
+      color: #062415;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 35px;
+      padding: 25px;
+      text-align: center;
+      background: #101c30;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚽ FootZone</h1>
+    <p>Toute l'actualité du football au même endroit.</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#competitions">Compétitions</a>
+    <a href="#premium">Premium</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="accueil">
+      <h2>Le football, notre passion !</h2>
+      <p>Retrouve les dernières nouvelles, les grandes compétitions
+      et les résultats du monde du football.</p>
+    </section>
+
+    <section id="actualites">
+      <h2 class="section-title">📰 Actualités</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Le football mondial</h3>
+          <p>Retrouve ici les nouvelles de tes clubs et joueurs préférés.</p>
+          <span class="tag">ACTUALITÉS</span>
+        </article>
+        <article class="card">
+          <h3>Le football africain</h3>
+          <p>Les clubs africains et les performances de nos champions.</p>
+          <span class="tag">AFRIQUE</span>
+        </article>
+        <article class="card">
+          <h3>Les transferts</h3>
+          <p>Les mouvements et rumeurs du mercato.</p>
+          <span class="tag">MERCATO</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="competitions">
+      <h2 class="section-title">🏆 Compétitions</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Ligue des Champions</h3>
+          <p>Actualités de la plus grande compétition européenne des clubs.</p>
+        </article>
+        <article class="card">
+          <h3>Premier League</h3>
+          <p>Les nouvelles du championnat anglais.</p>
+        </article>
+        <article class="card">
+          <h3>Ligue 1</h3>
+          <p>Les nouvelles du championnat français.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="premium" id="premium">
+      <h2>⭐ FootZone Premium</h2>
+      <p>Un futur abonnement pour soutenir FootZone et profiter
+      de fonctionnalités supplémentaires.</p>
+      <h3>500 F CFA / mois</h3>
+      <p>Le paiement en ligne sera ajouté après la création du site.</p>
+      <button onclick="alert('FootZone Premium arrive bientôt !')">
+        Découvrir Premium
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FootZone — La passion du football.</p>
+  </footer>
+</body>
+</html>
